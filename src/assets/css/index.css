@@ -1,0 +1,279 @@
+/*表单*/
+.ms-form {
+  background: #fff;
+  padding: 20px;
+}
+
+/*表单项*/
+.ms-form-item {
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  clear: both;
+  *zoom:1;
+}
+.ms-form-item-inline {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  clear: both;
+  *zoom:1;
+}
+.ms-form-label {
+  display: block;
+  position: absolute;
+  padding: 8px 15px;
+  width: 120px;
+  font-weight: 500;
+  text-align: right;
+  line-height: 20px;
+}
+.ms-form-input-inline {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  min-height: 36px;
+}
+.ms-form-input-block {
+  display: block;
+  margin-left: 120px;
+  align-items: center;
+  position: relative;
+  min-height: 36px;
+}
+.ms-form-input-text {
+  display: inline-block;
+  width: 240px;
+  height: 38px;
+  line-height: 28px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(81,130,228,.5);
+  vertical-align: middle;
+  outline: none;
+  font-size: 14px;
+}
+.ms-form-textarea {
+  display: inline-block;
+  width: auto;
+  line-height: 28px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border: 1px solid rgba(81,130,228,.5);
+  border-radius: 5px;
+  vertical-align: middle;
+  outline: none;
+  font-size: 14px;
+}
+.ms-form-input-after {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+/*chips*/
+.ms-chips-text {
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  margin: 8px 16px 8px 0;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #363636;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+.ms-chips-text.curr {
+  background: #4caf50;
+  border-color: transparent;
+  color: #fff;
+}
+/*按钮*/
+.ms-button {
+  position: relative;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 .2em;
+  padding: 0.5em 0.75em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: white;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+.ms-button:hover {
+  text-decoration: none;
+}
+.ms-button:focus, .ms-button.ms-focused, .ms-button:active, .ms-button.ms-active {
+  outline: none;
+}
+
+.ms-button[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ms-button.ms-success {
+  background-color: #23d160;
+  border-color: transparent;
+  color: #fff;
+}
+
+.ms-button.ms-success:hover, .ms-button.ms-success.ms-hovered {
+  background-color: #22c65b;
+  border-color: transparent;
+  color: #fff;
+}
+.ms-button.ms-info {
+  background-color: #3273dc;
+  border-color: transparent;
+  color: #fff;
+}
+.ms-button.ms-info:hover, .ms-button.ms-info.ms-hovered {
+  background-color: #276cda;
+  border-color: transparent;
+  color: #fff;
+}
+.ms-button.ms-danger{
+  background-color: #ff3860;
+  border-color: transparent;
+  color: #fff;
+}
+.ms-button.ms-danger:hover, .ms-button.ms-danger.ms-hovered {
+  background-color: #ff2b56;
+  border-color: transparent;
+  color: #fff;
+}
+
+.ms-button.ms-warning {
+  background-color: #ffdd57;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+.ms-button.ms-warning:hover, .ms-button.ms-warning.ms-hovered {
+  background-color: #ffdb4a;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*图表*/
+.chart-wrap {
+  padding: 20px;
+  overflow: auto;
+}
+.ms-chart {
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 1)
+}
+.ms-chart-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+  padding: 10px 16px;
+}
+/*tooltips*/
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]:before {
+  display: inline-block;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+  padding: 5px 8px;
+  content: attr(data-tooltip);
+  background: #616161;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: none;
+  transition: .2s cubic-bezier(.4,0,.6,1);
+  visibility: hidden;
+  z-index: 99;
+  box-shadow: 0 1px 5px rgba(0,0,0,.2),0 2px 2px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
+}
+
+[data-tooltip]:hover:before {
+    opacity: 1;
+    visibility: visible
+}
+
+[data-tooltip][data-tooltip-location=bottom]:before {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-14px) scale(.1);
+    transform-origin: center top
+}
+
+[data-tooltip][data-tooltip-location=bottom]:hover:before {
+    transform: translate(-50%,14px) scale(1.01)
+}
+
+[data-tooltip][data-tooltip-location=top]:before {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,14px) scale(.1);
+    transform-origin: center bottom
+}
+
+[data-tooltip][data-tooltip-location=top]:hover:before {
+    transform: translate(-50%,-14px) scale(1.01)
+}
+
+[data-tooltip][data-tooltip-location=left]:before {
+    right: 100%;
+    transform: translate(14px) scale(.1);
+    transform-origin: center right
+}
+
+[data-tooltip][data-tooltip-location=left]:hover:before {
+    transform: translate(-14px) scale(1.01)
+}
+
+[data-tooltip][data-tooltip-location=right]:before {
+    left: 100%;
+    transform: translate(-14px) scale(.1);
+    transform-origin: center left
+}
+
+[data-tooltip][data-tooltip-location=right]:hover:before {
+    transform: translate(14px) scale(1.01)
+}
+
+@media only screen and (max-width: 1023px) {
+    [data-tooltip]:before {
+        padding:10px 16px
+    }
+
+    [data-tooltip][data-tooltip-location=bottom]:hover:before {
+        transform: translate(-50%,24px) scale(1.01)
+    }
+
+    [data-tooltip][data-tooltip-location=top]:hover:before {
+        transform: translate(-50%,-24px) scale(1.01)
+    }
+
+    [data-tooltip][data-tooltip-location=left]:hover:before {
+        transform: translate(-24px) scale(1.01)
+    }
+
+    [data-tooltip][data-tooltip-location=right]:hover:before {
+        transform: translate(24px) scale(1.01)
+    }
+}

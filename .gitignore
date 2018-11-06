@@ -1,0 +1,93 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# vim
+*.swp
+
+# C extensions
+*.so
+
+# VIM
+*.swp
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+.vscode
+eggs/
+# lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# NodeJS
+node_modules/
+
+# First Page of VUE
+templates/index.html
+
+# Env
+.env/
+.idea/
+.vscode/
+/local/
+media/
+.env
+# Mac
+.DS_Store
+
+# Personal Ignore
+# Chuncheng
+fire.sh
+
+# Project
+ascle/settings.py
+log/.django.request.log.swp
+fe-dist/
+celerybeat-schedule.db
+celerybeat.pid
+dump.rdb
+
+ascle/rpcd.json
+.env
+jmanage.py
